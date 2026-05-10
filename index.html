@@ -1,142 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ADN VS Crunchyroll</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="background-glow"></div>
-  <header class="hero">
-    <div>
-      <p class="subtitle">Anime Streaming Analytics</p>
-      <h1>ADN VS Crunchyroll</h1>
-      <p class="description">Une comparaison moderne et graphique des deux plateformes de streaming anime : chiffres clés, forces, exclusivités et arguments d’abonnement.</p>
-    </div>
-    <div class="hero-card">
-      <span class="adn">ADN</span><span class="vs">VS</span><span class="cr">CRUNCHYROLL</span>
-    </div>
-  </header>
-  <!-- Logo row inserted for visual enhancement -->
-  <div class="logo-row">
-    <img src="adn_logo_white.svg" alt="Logo ADN">
-    <img src="crunchyroll_icon.png" alt="Logo Crunchyroll">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>ADN VS CRUNCHYROLL</h1>
+    <p class="sub">Catalogues · Exclusivités · Comparatif</p>
+    <div class="line"></div>
   </div>
 
-  <section class="stats-grid">
-    <div class="card orange">
-      <h2>ADN</h2>
-      <p class="big">200K</p>
-      <span>Abonnés estimés</span>
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat-card" style="--accent:#3b9dff;--accent-dim:#3b9dff22;">
+      <div class="val">200K</div><div class="lbl">Abonnés ADN</div>
     </div>
-    <div class="card blue">
-      <h2>Crunchyroll</h2>
-      <p class="big">21M</p>
-      <span>Abonnés estimés</span>
+    <div class="stat-card" style="--accent:#ff6b2b;--accent-dim:#ff6b2b22;">
+      <div class="val">21M</div><div class="lbl">Abonnés CR</div>
     </div>
-    <div class="card dark">
-      <h2>Catalogue ADN</h2>
-      <p class="big">500+</p>
-      <span>Séries & films</span>
+    <div class="stat-card" style="--accent:#3b9dff;--accent-dim:#3b9dff22;">
+      <div class="val">500+</div><div class="lbl">Séries ADN</div>
     </div>
-    <div class="card darkblue">
-      <h2>Catalogue CR</h2>
-      <p class="big">50K+</p>
-      <span>Épisodes disponibles</span>
+    <div class="stat-card" style="--accent:#ff6b2b;--accent-dim:#ff6b2b22;">
+      <div class="val">50K+</div><div class="lbl">Épisodes CR</div>
     </div>
-  </section>
+  </div>
 
-  <section class="charts-section">
-    <h2>Visualisation graphique</h2>
-    <div class="chart-wrapper">
-      <div class="chart-card">
-        <h3>Popularité</h3>
-        <div class="bar-group">
-          <div class="label-row"><span>ADN</span><span>25%</span></div>
-          <div class="bar"><div class="fill orange-fill" style="width:25%"></div></div>
-        </div>
-        <div class="bar-group">
-          <div class="label-row"><span>Crunchyroll</span><span>90%</span></div>
-          <div class="bar"><div class="fill blue-fill" style="width:90%"></div></div>
+  <!-- ARENA -->
+  <div class="arena">
+
+    <!-- COLONNE ADN -->
+    <div class="column" id="col-adn"
+      style="--accent:#3b9dff;--accent-dim:#3b9dff30;--accent-bg:#3b9dff0d;--accent-mid:#3b9dffaa;--accent-glow:#3b9dff66;">
+      <div class="col-header">
+        <div class="col-bar"></div>
+        <div>
+          <div class="col-name">ADN</div>
+          <div class="col-sub">ANIME DIGITAL NETWORK</div>
         </div>
       </div>
-      <div class="chart-card">
-        <h3>Catalogue</h3>
-        <svg viewBox="0 0 400 250" class="svg-chart">
-          <line x1="40" y1="200" x2="360" y2="200" class="axis"></line>
-          <rect x="90" y="150" width="70" height="50" rx="12" class="svg-orange"></rect>
-          <rect x="230" y="40" width="70" height="160" rx="12" class="svg-blue"></rect>
-          <text x="125" y="220">ADN</text>
-          <text x="265" y="220">CR</text>
-          <text x="125" y="140">500+</text>
-          <text x="265" y="30">50K+</text>
-        </svg>
+      <div class="cards-grid" id="grid-adn"></div>
+    </div>
+
+    <!-- VS -->
+    <div class="vs-divider">
+      <div class="vs-line top"></div>
+      <div class="vs-text">VS</div>
+      <div class="vs-line bot"></div>
+    </div>
+
+    <!-- COLONNE CRUNCHYROLL -->
+    <div class="column" id="col-cr"
+      style="--accent:#ff6b2b;--accent-dim:#ff6b2b30;--accent-bg:#ff6b2b0d;--accent-mid:#ff6b2baa;--accent-glow:#ff6b2b66;">
+      <div class="col-header">
+        <div class="col-bar"></div>
+        <div>
+          <div class="col-name">Crunchyroll</div>
+          <div class="col-sub">STREAMING MONDIAL</div>
+        </div>
       </div>
+      <div class="cards-grid" id="grid-cr"></div>
     </div>
-  </section>
 
-  <section class="exclusives-section">
-    <div class="section-title">
-      <p class="subtitle">Exclusivités & abonnements</p>
-      <h2>Les séries qui peuvent faire choisir une plateforme</h2>
-      <p>Les droits de diffusion changent régulièrement. Cette liste présente des exemples de titres exclusifs, quasi-exclusifs ou très fortement associés à chaque plateforme sur le marché français.</p>
-    </div>
-    <div class="exclusive-grid">
-      <article class="exclusive-card adn-card">
-        <div class="platform-header">
-          <span class="platform-pill adn-pill">ADN</span>
-          <h3>Exemples côté ADN</h3>
-        </div>
-        <ul class="anime-list">
-          <li><strong>One Piece</strong><span>Un pilier du catalogue ADN en France, très fort pour les fans de shōnen long format.</span></li>
-          <li><strong>Naruto / Naruto Shippuden</strong><span>Licence populaire et nostalgique, idéale pour toucher un public large.</span></li>
-          <li><strong>Boruto</strong><span>Suite de Naruto, utile pour suivre l’univers complet.</span></li>
-          <li><strong>Bleach</strong><span>Grand classique shōnen, souvent recherché par les fans historiques.</span></li>
-          <li><strong>Détective Conan</strong><span>Titre long format apprécié pour son côté enquête et aventure.</span></li>
-          <li><strong>City Hunter / Nicky Larson</strong><span>Catalogue rétro parlant pour le public français.</span></li>
-        </ul>
-        <div class="arguments-box">
-          <h4>Arguments d’abonnement ADN</h4>
-          <p>ADN mise sur une identité française, une interface simple, des classiques très connus, des versions françaises/sous-titrées et une proximité avec le public francophone.</p>
-        </div>
-      </article>
-      <article class="exclusive-card cr-card">
-        <div class="platform-header">
-          <span class="platform-pill cr-pill">Crunchyroll</span>
-          <h3>Exemples côté Crunchyroll</h3>
-        </div>
-        <ul class="anime-list">
-          <li><strong>Demon Slayer</strong><span>Licence moderne énorme, très attractive pour les abonnements.</span></li>
-          <li><strong>Jujutsu Kaisen</strong><span>Titre phare récent, très populaire chez les fans de shōnen actuel.</span></li>
-          <li><strong>Chainsaw Man</strong><span>Anime événement, avec une image plus adulte et très moderne.</span></li>
-          <li><strong>My Hero Academia</strong><span>Grosse licence super-héroïque, facile à recommander.</span></li>
-          <li><strong>Solo Leveling</strong><span>Production très visible, forte traction internationale.</span></li>
-          <li><strong>Spy x Family</strong><span>Anime familial, drôle et très accessible.</span></li>
-        </ul>
-        <div class="arguments-box">
-          <h4>Arguments d’abonnement Crunchyroll</h4>
-          <p>Crunchyroll est plus fort pour le volume, les nouveautés, le simulcast, les licences récentes très médiatisées et la puissance internationale de la marque.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+  </div>
 
-  <section class="circle-section">
-    <div class="circle-card">
-      <div class="circle orange-circle"><span>72%</span></div>
-      <h3>ADN</h3>
-      <p>Très apprécié par le public francophone.</p>
-    </div>
-    <div class="circle-card">
-      <div class="circle blue-circle"><span>95%</span></div>
-      <h3>Crunchyroll</h3>
-      <p>Leader mondial du streaming anime.</p>
-    </div>
-  </section>
+  <!-- FOOTER -->
+  <div class="footer">Images : MyAnimeList via Jikan API · Les droits de diffusion peuvent évoluer</div>
+
   <script src="script.js"></script>
 </body>
 </html>
