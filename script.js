@@ -1,19 +1,31 @@
+// ADN exclusives en France (non disponibles sur Crunchyroll France)
 const ADN_ANIMES = [
-  { title: "One Piece",         query: "One Piece" },
-  { title: "Naruto Shippuden",  query: "Naruto Shippuden" },
-  { title: "Boruto",            query: "Boruto Naruto Next Generations" },
-  { title: "Bleach",            query: "Bleach" },
-  { title: "D\u00e9tective Conan",   query: "Detective Conan" },
-  { title: "City Hunter",       query: "City Hunter" },
+  { title: "D\u00e9tective Conan",  query: "Detective Conan" },
+  { title: "Dragon Ball Super",      query: "Dragon Ball Super" },
+  { title: "City Hunter",            query: "City Hunter 2019" },
+  { title: "Radiant",                query: "Radiant" },
+  { title: "Black Clover",           query: "Black Clover" },
+  { title: "Captain Tsubasa",        query: "Captain Tsubasa 2018" },
+  { title: "Re:Zero",                query: "Re:Zero kara Hajimeru Isekai Seikatsu" },
+  { title: "Sword Art Online",       query: "Sword Art Online" },
+  { title: "Overlord",               query: "Overlord" },
+  { title: "Fairy Tail",             query: "Fairy Tail 2014" },
 ];
 
+// Crunchyroll exclusives (non disponibles sur ADN France)
 const CR_ANIMES = [
-  { title: "Demon Slayer",      query: "Kimetsu no Yaiba" },
-  { title: "Jujutsu Kaisen",    query: "Jujutsu Kaisen" },
-  { title: "Chainsaw Man",      query: "Chainsaw Man" },
-  { title: "My Hero Academia",  query: "Boku no Hero Academia" },
-  { title: "Solo Leveling",     query: "Solo Leveling" },
-  { title: "Spy x Family",      query: "Spy x Family" },
+  { title: "Demon Slayer",           query: "Kimetsu no Yaiba" },
+  { title: "Jujutsu Kaisen",         query: "Jujutsu Kaisen" },
+  { title: "Chainsaw Man",           query: "Chainsaw Man" },
+  { title: "My Hero Academia",       query: "Boku no Hero Academia" },
+  { title: "Solo Leveling",          query: "Solo Leveling" },
+  { title: "Attack on Titan",        query: "Shingeki no Kyojin" },
+  { title: "Blue Lock",              query: "Blue Lock" },
+  { title: "Frieren",                query: "Sousou no Frieren" },
+  { title: "Hell's Paradise",       query: "Jigokuraku" },
+  { title: "Oshi no Ko",             query: "Oshi no Ko" },
+  { title: "Vinland Saga",           query: "Vinland Saga" },
+  { title: "Bleach: TYBW",           query: "Bleach Sennen Kessen-hen" },
 ];
 
 function createSkeleton(title) {
